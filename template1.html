@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tempalte1</title>
+    <style>
+       body{
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         background-image:linear-gradient(rgba(77, 78, 103, 0.634),rgba(4, 4, 4, 0.79)) ,url(images/tempalte1.jpg);
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+         color: white;
+         font-family: sans-serif;
+       }
+       nav{
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         background-color: black;
+         color: white;
+
+       }
+       .text-logo{
+         margin-left: 10px;
+       }
+       .nav ul {
+         display: flex;
+         gap: 12px;
+         align-items: center;
+         margin-right: 15px;
+         list-style: none;
+       }
+       ul li a{
+         text-decoration: none;
+         font-size: 12px;
+         color: white;
+       }
+       .last-child{
+         background-color: dodgerblue;
+         padding: 3px 10px;
+         border-radius: 10px;
+         font-size: 12px;
+         transition: all 0.3s;
+       }
+        .last-child:hover{
+       background-color: white;
+       color: rgb(1, 8, 15);
+       font-weight: 500;
+        }
+
+       .container{
+         margin-top: 150px;
+         margin-left: 120px;
+
+       }
+
+       .hero{
+         font-size: 28px;
+         font-weight: 700;
+       }
+       .hero-1{
+         margin-bottom: 7px;
+       }
+       .hero-2{
+         margin-top: 7px;
+       }
+       .we{
+         color: rgba(251, 64, 7, 0.755);
+       }
+       .don{
+         background-color:rgba(251, 64, 7, 0.755);
+         border-radius: 1px;
+         padding: 0px 3px;
+       }
+
+       .content li{
+         display: flex;
+         align-items: center;
+         list-style: none;
+         gap: 4px;
+         margin-top: 8px;
+         font-size: 14px;
+       }
+       .icon{
+         color: rgba(251, 64, 7, 0.755);
+         font-weight: 700;
+         font-size: 18px;
+       }
+
+       .works{
+        margin-left: -43px;
+       }
+       .btn{
+         background-color: yellow;
+         padding: 12px 30px;
+         border-radius: 15px;
+         border: none;
+         margin-top: 20px;
+         cursor: pointer;
+         font-size: 11px;
+         transition: all 0.3s ease-in-out;
+       }
+       .btn:hover{
+         background-color: rgba(251, 64, 7, 0.755);
+         color: white;
+       }
+
+       .logo{
+        display: flex;
+        justify-content: space-between;
+
+
+       }
+       .button{
+        font-size: 28px;
+        border: none;
+        color: white;
+        background: black;
+        position: absolute;
+        right: 3px;
+        top: 19px;
+        display: none;
+        z-index: 5;
+
+       }
+       .cross-btn {
+         font-size: 28px;
+        border: none;
+       color: white;
+        background: black;
+        position: absolute;
+         right: 3px;
+        top: 19px;
+        display: none;
+        z-index: 4;
+      }
+
+
+
+
+
+
+
+      @media (max-width: 500px){
+
+        .nav-hide{
+          display: flex;
+          flex-direction: column;
+          gap: 50px;
+
+
+           align-items: center;
+
+           height: 50vh;
+           position: absolute;
+           right: 0;
+           max-width: 70px;
+           margin-top: 70px;
+
+          }
+
+          .hide{
+         visibility: hidden;
+          }
+
+         nav ul li{
+           margin-top: 20px;
+         }
+
+         nav ul li a{
+          color: black;
+          background-color: white;
+           font-size: 16px;
+           display: inline-block;
+             padding: 3px 10px;
+         border-radius: 10px;
+
+
+         }
+         .container{
+           position: relative;
+         }
+         .works{
+           margin-right: 160px;
+           font-size: 24px;
+         }
+           .last-child{
+      background: white;
+         padding: 3px 10px;
+         border-radius: 10px;
+         font-size: 16px;
+         transition: all 0.3s;
+       }
+       .button {
+      display: block;
+       }
+        .cross-btn{
+          display: block;
+        }
+
+
+
+
+
+       }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <h2 class="text-logo">CarM4</h2>
+        <button class="button">
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+        <button class="cross-btn">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+      <div class="nav">
+        <ul class="nav-hide hide">
+          <li><a href="">Home</a></li>
+          <li><a href="">Demo Pgaes</a></li>
+          <li><a href="">Live Demo Blocks</a></li>
+          <li><a class="last-child" href="">Buy Car M4</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="advertise">
+        <p class="hero hero-1">
+          <span class="we">We</span> <span class="don">Don't</span> Sell Cars
+        </p>
+        <p class="hero hero-2">We Sell A DREAM</p>
+      </div>
+      <div class="works">
+        <ul class="content">
+          <li>
+            <ion-icon class="icon" name="checkmark-outline"></ion-icon>We're
+            Here When You Need Us
+          </li>
+          <li>
+            <ion-icon class="icon" name="checkmark-outline"></ion-icon>Above
+            Average Cars, Below Average Prices
+          </li>
+          <li>
+            <ion-icon class="icon" name="checkmark-outline"></ion-icon
+            >Guaranteed Financing No Matter Your Credit History
+          </li>
+          <li>
+            <ion-icon class="icon" name="checkmark-outline"></ion-icon>Sell Us
+            Your Car Without The Hassle
+          </li>
+        </ul>
+      </div>
+      <button class="btn" type="button">Get Approved</button>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="app.js"></script>
+  </body>
+</html>
