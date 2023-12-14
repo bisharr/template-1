@@ -1,0 +1,14 @@
+{
+  "name": "templates",
+  "version": "1.0.0",
+  "description": "testting my knowledge",
+  "main": "tepm.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Bishar",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
